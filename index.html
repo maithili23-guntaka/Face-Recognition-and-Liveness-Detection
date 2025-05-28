@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Face Recognition + Liveness</title>
+  <!-- ✅ Load face-api.js (browser version) BEFORE script.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body { text-align: center; font-family: Arial; }
+    video { border: 1px solid #ddd; margin-top: 10px; }
+    button { margin: 10px; padding: 10px 20px; }
+    #status { margin-top: 15px; color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Face Recognition + Liveness Detection</h1>
+  <video id="video" width="640" height="480" autoplay muted></video><br>
+  <button id="enroll">Enroll</button>
+  <button id="recognize">Recognize</button>
+  <button id="exit">Exit</button>
+  <div id="status">Loading models...</div>
+</body>
+</html>
